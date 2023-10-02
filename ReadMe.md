@@ -1,35 +1,39 @@
 # React Native Donut Chart is a dynamic custom donut chart with infinit number of parameters and can be used as a half and full donut chart.
 
-# The DonutChart Props are :
+## The DonutChart Props are :
 
-# precentegs?: Precentage[];
+### precentegs?: Precentage[];
 
-# radius?: number;
+### radius?: number;
 
-# strokeWidth?: number;
+### strokeWidth?: number;
 
-# duration?: number;
+### duration?: number;
 
-# backColor?: string;
+### backColor?: string;
 
-# textColor?: string;
+### textColor?: string;
 
-# strokeLinecap?: string;
+### strokeLinecap?: string;
 
-# rotation?: number;
+### rotation?: number;
 
-# isCemiCircle?: boolean;
+### isCemiCircle?: boolean;
 
-# isShowDescription?: boolean;
+### isShowDescription?: boolean;
 
-# isShowTotalValue?: boolean;
+### isShowTotalValue?: boolean;
 
-# totalValueStyle?: TextStyle;
+### totalValueStyle?: TextStyle;
 
-# textDescriptionStyle?: TextStyle;
+### textDescriptionStyle?: TextStyle;
 
-# valueDescriptionStyle?: TextStyle;
+### valueDescriptionStyle?: TextStyle;
 
-# dotDescriptionStyle?: TextStyle;
+### dotDescriptionStyle?: TextStyle;
 
-# easing?: any;
+### easing?: any;
+
+![Screenshot of a semi circular donut chart: ](./assets/images/Screenshot%202023-10-02%20235007.png)
+
+![Screenshot of a full circular donut chart: ](./assets/images/Screenshot%202023-10-02%20235143.png)
