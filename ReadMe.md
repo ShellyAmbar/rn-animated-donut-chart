@@ -38,6 +38,9 @@
 
 ![Screenshot of a semi circular donut chart: ](./assets/images/SemiCircle.png)
 
+![](./assets/videos/half.gif)
+
 # Full circular donut chart:
 
 ![Screenshot of a full circular donut chart: ](./assets/images/FullCircle.png)
+![ ](./assets/videos/full.gif)
