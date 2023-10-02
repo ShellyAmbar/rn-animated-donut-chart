@@ -1,40 +1,6 @@
-# React Native Donut Chart is a dynamic custom donut chart with infinit number of parameters and can be used as a half and full donut chart.
+# RN-Animated-Donut-Chart is a dynamic donut chart with an infinit numbers of categories and can be used as a half and full donut chart.
 
-## The DonutChart Props are :
-
-### precentegs?: Precentage[];
-
-### radius?: number;
-
-### strokeWidth?: number;
-
-### duration?: number;
-
-### backColor?: string;
-
-### textColor?: string;
-
-### strokeLinecap?: string;
-
-### rotation?: number;
-
-### isCemiCircle?: boolean;
-
-### isShowDescription?: boolean;
-
-### isShowTotalValue?: boolean;
-
-### totalValueStyle?: TextStyle;
-
-### textDescriptionStyle?: TextStyle;
-
-### valueDescriptionStyle?: TextStyle;
-
-### dotDescriptionStyle?: TextStyle;
-
-### easing?: any;
-
-# Semi circular donut chart:
+## It comes with built-in TypeScript typings and is compatible with all popular JavaScript frameworks including React , Vue , Svelte , and Angular . You can use RN-Animated-Donut-Chart directly or leverage well-maintained wrapper packages that allow for a more native integration with your frameworks of choice.
 
 ![Screenshot of a semi circular donut chart: ](./assets/images/SemiCircle.png)
 
@@ -44,3 +10,22 @@
 
 ![Screenshot of a full circular donut chart: ](./assets/images/FullCircle.png)
 ![ ](./assets/videos/full.gif)
+
+| Name                  | Type         | Default                 |
+| --------------------- | ------------ | ----------------------- |
+| precentegs            | Precentage[] | []                      |
+| radius                | number       | 200                     |
+| strokeWidth           | number       | 150                     |
+| duration              | number       | 500                     |
+| backColor             | string       | "tomato"                |
+| textColor             | string       | "black"                 |
+| strokeLinecap         | string       | "none"                  |
+| rotation              | number       | 180                     |
+| isCemiCircle          | boolean      | true                    |
+| isShowDescription     | boolean      | false                   |
+| isShowTotalValue      | boolean      | true                    |
+| totalValueStyle       | TextStyle    | null                    |
+| textDescriptionStyle  | TextStyle    | null                    |
+| valueDescriptionStyle | TextStyle    | null                    |
+| dotDescriptionStyle   | TextStyle    | null                    |
+| easing                | any          | Easing.out(Easing.ease) |
