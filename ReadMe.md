@@ -34,6 +34,12 @@
 
 ### easing?: any;
 
+# Semi circular donut chart:
+
 ![Screenshot of a semi circular donut chart: ](./assets/images/Screenshot%202023-10-02%20235007.png)
+![Video of a semi circular donut chart: ](./assets/videos/Recording%202023-10-03%20000808.mp4)
+
+# Full circular donut chart:
 
 ![Screenshot of a full circular donut chart: ](./assets/images/Screenshot%202023-10-02%20235143.png)
+![Video of a semi circular donut chart: ](./assets/videos/Recording%202023-10-03%20001015.mp4)
