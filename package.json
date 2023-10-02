@@ -1,0 +1,31 @@
+{
+  "name": "rn-animated-donut-chart",
+  "version": "1.0.0",
+  "description": "An Animated and dynamic donut chart with 2 modes : Semi circular or Full circle. using react-native-svg and react hooks.",
+  "main": "donut-chart/donut-chart.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shelly Ambar",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShellyAmbar/rn-animated-donut-chart.git"
+  },
+  "keywords": [
+    "donut",
+    "chart",
+    "graph",
+    "cemi",
+    "circular"
+  ],
+  "bugs": {
+    "url": "https://github.com/ShellyAmbar/rn-animated-donut-chart/issues"
+  },
+  "homepage": "https://github.com/ShellyAmbar/rn-animated-donut-chart#readme",
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-native": "0.72.3",
+    "react-native-svg": "^13.14.0"
+  }
+}
