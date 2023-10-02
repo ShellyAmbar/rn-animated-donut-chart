@@ -1,6 +1,6 @@
-# React Native Donut Chart is a dynamic custom donut chart with init number of parameters and can be used as a half and full donut chart.
+# React Native Donut Chart is a dynamic custom donut chart with infinit number of parameters and can be used as a half and full donut chart.
 
-# DonutChartProps are :
+# The DonutChart Props are :
 
 # precentegs?: Precentage[];
 
