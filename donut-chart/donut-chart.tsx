@@ -1,8 +1,8 @@
-import React, {useRef, useEffect} from 'react';
-import {Easing, TextInput, Animated, View, Text} from 'react-native';
-import Svg, {G, Circle} from 'react-native-svg';
-import {DonutChartProps} from './interfaces';
-import Styles from './donut-chart.styles';
+import React, {useRef, useEffect} from "react";
+import {Easing, TextInput, Animated, View, Text} from "react-native";
+import Svg, {G, Circle} from "react-native-svg";
+import {DonutChartProps} from "./interfaces";
+import Styles from "./donut-chart.styles";
 
 const AnimatedTextInput = Animated.createAnimatedComponent(TextInput);
 
@@ -11,9 +11,9 @@ export default function DonutChart({
   radius = 200,
   strokeWidth = 150,
   duration = 500,
-  backColor = 'tomato',
-  textColor = 'black',
-  strokeLinecap = 'none',
+  backColor = "tomato",
+  textColor = "black",
+  strokeLinecap = "none",
   rotation = 180,
   isCemiCircle = true,
   isShowDescription = false,
@@ -34,7 +34,7 @@ export default function DonutChart({
   const halfCircle = radius + strokeWidth;
   const max = precentegs.reduce((v1, v2) => v1 + v2.value, 0);
 
-  const addRef = ref => {
+  const addRef = (ref) => {
     if (ref && !refs.current.includes(ref)) {
       refs.current.unshift(ref);
     }
@@ -81,7 +81,7 @@ export default function DonutChart({
     ref = refs.current[0];
     animation(0, precentegs.length, animated);
 
-    animated.addListener(v => {
+    animated.addListener((v) => {
       const maxPerc = isCemiCircle
         ? (100 * v.value) / max / 2
         : (100 * v.value) / max;
@@ -102,17 +102,15 @@ export default function DonutChart({
   }, []);
 
   return (
-    <View style={{width: '100%'}}>
+    <View style={Styles.container}>
       <Svg
         height={isCemiCircle ? radius : radius * 2}
-        width={'100%'}
-        style={{
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
+        width={"100%"}
+        style={Styles.svgContainer}
         viewBox={`${0} ${isCemiCircle ? halfCircle / 2 : halfCircle / 4} ${
           halfCircle * 2
-        } ${halfCircle}`}>
+        } ${halfCircle}`}
+      >
         <G rotation={rotation} origin={`${halfCircle}, ${halfCircle}`}>
           {precentegs.map((v, i) => {
             return (
@@ -166,9 +164,7 @@ export default function DonutChart({
       {isShowDescription && (
         <View>
           {precentegs.map((precentage, index) => (
-            <View
-              key={precentage.id}
-              style={{flexDirection: 'row', alignItems: 'center'}}>
+            <View key={precentage.id} style={Styles.row}>
               <View
                 style={[
                   {backgroundColor: precentage.color},
@@ -181,7 +177,8 @@ export default function DonutChart({
                   Styles.velue,
                   {color: precentage.color},
                   {...valueDescriptionStyle},
-                ]}>
+                ]}
+              >
                 {precentage.value}
               </Text>
               <Text
@@ -189,7 +186,8 @@ export default function DonutChart({
                   Styles.description,
                   {color: precentage.color},
                   {...textDescriptionStyle},
-                ]}>
+                ]}
+              >
                 {precentage.name}
               </Text>
             </View>
